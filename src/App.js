@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { makeStyles } from '@material-ui/core';
+import Accueil from './pages/Accueil'
+import Projet from './pages/Projet';
+import Competences from './pages/Competences';
+import Contact from './pages/Contact';
+
+
+import Profil from './pages/Profil'
+
+
+import './styles/App.css';
+
+
+
 
 function App() {
+
+  const useStyles = makeStyles((theme) => ({
+    root : {
+      overflowX : 'hidden'
+      //backgroundColor : 'yellow',
+    },
+    
+  }));
+  
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class={classes.root}>
+      <Accueil/>
+      <Profil/>
+      <Projet/>
+      <Competences/>
+      <Contact/>
     </div>
   );
 }
