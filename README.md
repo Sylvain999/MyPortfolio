@@ -17,7 +17,7 @@
 <p>
   <b>Contraintes :</b>
   <ul>
-    <li>Aucune</li>
+    <li>Comporter les rubriques nécessaires (profil, projets, competences, contact)</li>
   </ul>
 </p>
 
